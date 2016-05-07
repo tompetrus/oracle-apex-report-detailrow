@@ -25,17 +25,6 @@ BEGIN
          p_dynamic_action => p_dynamic_action 
       );
    END IF;
-   
-   apex_javascript.add_library(
-       p_name       => 'jquery.ui.detailRow'
-     , p_directory  => p_plugin.file_prefix
-     , p_key        => 'dtr-js'
-   );
-   
-   apex_css.add_file(
-       p_name       => 'jquery.ui.detailRow'
-     , p_directory  => p_plugin.file_prefix
-   );
   
   l_code := 
     'function(){ this.affectedElements.detailrow({' || l_crlf

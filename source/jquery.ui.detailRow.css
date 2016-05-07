@@ -7,11 +7,11 @@
 }
 
 div.dtr-detailtoggle.dtr-open {
-  background-image: url("#PLUGIN_PREFIX#dtr-open.gif");
+  background-image: url("images/dtr-open.gif");
 }
 
 div.dtr-detailtoggle.dtr-closed {
-  background-image: url("#PLUGIN_PREFIX#dtr-closed.gif");
+  background-image: url("images/dtr-closed.gif");
 }
 
 tr.dtr-detail > td {
@@ -27,7 +27,7 @@ tr.dtr-detail > td > div.dtr-detailContent table {
 }
 
 tr.dtr-detail > td > div.dtr-loader {
-  background-image: url("#PLUGIN_PREFIX#dtr-ajax-loader.gif");
+  background-image: url("images/dtr-ajax-loader.gif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 50px;

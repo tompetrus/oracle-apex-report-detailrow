@@ -78,7 +78,9 @@ $.widget('ui.detailrow',
      */
     _create: function () {
       var uiw = this;
-      $(uiw.element).on( "click.dtr", "." + uiw.options.toggle.classes.toggle, function(event){ uiw._toggle.call( uiw, event.target ); });
+      var handlers = {};
+      handlers["click ." + uiw.options.toggle.classes.toggle] = function(event){ uiw._toggle.call( uiw, event.target ); };
+      uiw._on( this.element, handlers);
     }
   , 
     /**
